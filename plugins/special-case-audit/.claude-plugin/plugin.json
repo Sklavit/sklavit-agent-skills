@@ -1,0 +1,7 @@
+{
+  "name": "special-case-audit",
+  "version": "0.1.0",
+  "description": "Audit new conditionals and flags before writing them.",
+  "author": { "name": "Sergii Nechuiviter", "url": "https://github.com/Sklavit" },
+  "license": "MIT"
+}

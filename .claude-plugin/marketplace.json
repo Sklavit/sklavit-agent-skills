@@ -1,0 +1,55 @@
+{
+  "name": "sklavit-agent-skills",
+  "owner": {
+    "name": "Sergii Nechuiviter",
+    "url": "https://github.com/Sklavit"
+  },
+  "metadata": {
+    "description": "Sergii's agent skills: read-only investigation, special-case audits, review reports, tech writing. Plus pointers to upstream skill packs he uses.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "investigate",
+      "source": "./plugins/investigate",
+      "description": "Read-only investigation mode: answer, don't change. Includes a PreToolUse guard hook for Claude Code.",
+      "category": "engineering",
+      "keywords": ["read-only", "investigate", "analysis", "hooks"]
+    },
+    {
+      "name": "special-case-audit",
+      "source": "./plugins/special-case-audit",
+      "description": "Justify every new conditional/flag before it is written; drop branches that only defend your own earlier design.",
+      "category": "engineering",
+      "keywords": ["code-review", "design", "refactoring"]
+    },
+    {
+      "name": "review-report",
+      "source": "./plugins/review-report",
+      "description": "Render code-review findings as an HTML table with severity, evidence, Jira ticket check and three fixes per finding.",
+      "category": "engineering",
+      "keywords": ["code-review", "jira", "html", "report"]
+    },
+    {
+      "name": "linkedin-tech-posts",
+      "source": "./plugins/linkedin-tech-posts",
+      "description": "LinkedIn posts and Medium articles on AI/ML and software engineering for an engineering audience.",
+      "category": "writing",
+      "keywords": ["linkedin", "medium", "writing", "content"]
+    },
+    {
+      "name": "obsidian",
+      "source": { "source": "github", "repo": "kepano/obsidian-skills" },
+      "description": "Upstream (Steph Ango, MIT): obsidian-markdown, obsidian-bases, obsidian-cli, json-canvas, defuddle.",
+      "category": "third-party",
+      "keywords": ["obsidian", "upstream"]
+    },
+    {
+      "name": "mattpocock-skills",
+      "source": { "source": "github", "repo": "mattpocock/skills" },
+      "description": "Upstream (Matt Pocock, MIT): grill-me, grill-with-docs, write-a-skill, TDD, code review and more.",
+      "category": "third-party",
+      "keywords": ["engineering", "grilling", "upstream"]
+    }
+  ]
+}

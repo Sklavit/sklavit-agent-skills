@@ -1,0 +1,7 @@
+{
+  "name": "review-report",
+  "version": "0.1.0",
+  "description": "Code-review findings as an HTML table with Jira ticket checks.",
+  "author": { "name": "Sergii Nechuiviter", "url": "https://github.com/Sklavit" },
+  "license": "MIT"
+}
