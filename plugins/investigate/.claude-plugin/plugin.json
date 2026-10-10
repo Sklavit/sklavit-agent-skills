@@ -1,0 +1,7 @@
+{
+  "name": "investigate",
+  "version": "0.1.0",
+  "description": "Read-only investigation mode with a PreToolUse guard hook.",
+  "author": { "name": "Sergii Nechuiviter", "url": "https://github.com/Sklavit" },
+  "license": "MIT"
+}

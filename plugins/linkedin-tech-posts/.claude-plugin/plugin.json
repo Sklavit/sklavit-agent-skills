@@ -1,0 +1,7 @@
+{
+  "name": "linkedin-tech-posts",
+  "version": "0.1.0",
+  "description": "LinkedIn posts and Medium articles for engineers.",
+  "author": { "name": "Sergii Nechuiviter", "url": "https://github.com/Sklavit" },
+  "license": "MIT"
+}
