@@ -1,0 +1,14 @@
+{
+  "name": "sklavit-agent-skills",
+  "description": "Agent skills and Claude Code mods by Sklavit",
+  "owner": {
+    "name": "Sklavit"
+  },
+  "plugins": [
+    {
+      "name": "chat-panel",
+      "source": "./plugins/chat-panel",
+      "description": "Side pane for a Claude Code session: heads-up, summary, draft commit message, progress, findings, tests, notes and recaps"
+    }
+  ]
+}

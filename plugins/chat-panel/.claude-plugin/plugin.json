@@ -1,0 +1,35 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "chat-panel",
+  "version": "0.2.0",
+  "description": "Side pane with the you-should-know headline, /summary and the latest /recaps; native pane or cmux split",
+  "author": {
+    "name": "Sergii Nechuiviter",
+    "email": "snechuiviter@gmail.com"
+  },
+  "userConfig": {
+    "mode": {
+      "type": "string",
+      "title": "Panel mode",
+      "description": "native (default): a pane inside Claude Code, in any terminal and the desktop app. cmux: a split to the right of the Claude pane in cmux (tmux split in tmux), drawn by ~/.claude/tools/chat-panel/panel.py.",
+      "default": "native",
+      "options": [
+        "native",
+        "cmux"
+      ]
+    },
+    "autoOpen": {
+      "type": "boolean",
+      "title": "Open on session start",
+      "description": "Open the panel when a session starts. Off: open it with /panel.",
+      "default": true
+    },
+    "testCommand": {
+      "type": "string",
+      "title": "Test command",
+      "description": "The pytest command the Tests section reruns changed test files with, before the file names. Empty: off.",
+      "default": "uv run pytest --no-cov"
+    }
+  },
+  "types": "./types/index.d.ts"
+}
