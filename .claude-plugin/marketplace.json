@@ -9,6 +9,11 @@
       "name": "chat-panel",
       "source": "./plugins/chat-panel",
       "description": "Side pane for a Claude Code session: heads-up, summary, draft commit message, progress, findings, tests, notes and recaps"
+    },
+    {
+      "name": "sklavit-idle-handoff",
+      "source": "./plugins/sklavit-idle-handoff",
+      "description": "After an idle stretch, while the prompt cache is still warm, runs /mattpocock-skills:handoff with a keep-list brief"
     }
   ]
 }

@@ -5,6 +5,7 @@ Agent skills and Claude Code mods. The repository is a Claude Code plugin market
 | Plugin | Folder | Does |
 | --- | --- | --- |
 | `chat-panel` | `plugins/chat-panel/` | Side pane for one session: heads-up, summary, draft commit message, progress and findings, tests, notes, recaps |
+| `sklavit-idle-handoff` | `plugins/sklavit-idle-handoff/` | Runs `/mattpocock-skills:handoff` after an idle stretch, while the prompt cache is still warm |
 
 ## Install
 
