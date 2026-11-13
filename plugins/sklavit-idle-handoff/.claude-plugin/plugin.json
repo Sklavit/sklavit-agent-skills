@@ -1,0 +1,28 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "sklavit-idle-handoff",
+  "version": "0.1.0",
+  "description": "After an idle stretch, while the prompt cache is still warm, runs /mattpocock-skills:handoff with a keep-list brief.",
+  "author": {
+    "name": "Sergii Nechuiviter",
+    "email": "snechuiviter@gmail.com"
+  },
+  "license": "MIT",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "idleMinutes": {
+      "type": "number",
+      "title": "Idle minutes",
+      "description": "Minutes idle before the handoff runs. 50 leaves 10 minutes before a 1-hour prompt cache expires.",
+      "default": 50,
+      "min": 0
+    },
+    "minTokens": {
+      "type": "number",
+      "title": "Minimum conversation tokens",
+      "description": "Skip smaller conversations: a cold re-read of them is cheap. The system prompt and tools do not count.",
+      "default": 40000,
+      "min": 0
+    }
+  }
+}
